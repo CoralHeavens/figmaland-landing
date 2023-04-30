@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#2091F9',
+        black: '#252B42',
+        secondBlack: '#374754'
+      },
       backgroundImage: {
         '': ''
       },
@@ -15,6 +20,15 @@ module.exports = {
       },
       margin: {
         '10.5': '42px',
+        '22.5': '90px',
+        '33': '132px'
+      },
+      height: {
+        topSection: '1042px',
+        playButton: '187px'
+      },
+      width: {
+        playButton: '187px'
       }
     },
   },
