@@ -26,7 +26,7 @@ const headerLinks = [
 
 export default function Header () {
     return (
-        <div className="w-full m-auto flex-centered">
+        <section className="w-full flex-centered">
             <Icon
                 className="
                 flex-centered absolute w-full pointer-events-none
@@ -56,6 +56,6 @@ export default function Header () {
                     </a>
                 </div>
             </header>
-        </div>
+        </section>
     )
 }

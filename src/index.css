@@ -8,7 +8,11 @@
 }
 
 * {
-    @apply text-base
+    @apply text-base font-graphic
+}
+
+body {
+    @apply overflow-x-hidden
 }
 
 .flex-centered {
