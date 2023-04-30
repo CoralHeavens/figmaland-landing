@@ -24,29 +24,27 @@ const headerLinks = [
     }
 ]
 
-export default function Header ({
-    logo
-}) {
+export default function Header () {
     return (
         <div className="w-full m-auto flex-centered">
-            <div className="
+            <Icon
+                className="
                 flex-centered absolute w-full pointer-events-none
-                xl:h-[156px]]
-            ">
-                <Icon icon={logo}/>
-            </div>
+                xl:h-[156px]]"
+                icon='logo'
+            />
             <header className="
                 flex justify-between items-center
-                xl:h-[156px] 
+                xl:h-[156px] xl:w-[63vw]
             ">
-                <div className="h-12 flex-centered text-white font-normal font-graphic text-[15px] gap-[21px]">
+                <div className="h-12 flex-centered text-white font-normal font-graphic gap-[41px]">
                     {headerLinks.map(({label, link, index}) => (
-                        <a href={link} key={`${label}${index}`} className="m-2.5 leading-7 tracking-[0.2px]">
+                        <a href={link} key={`${label}${index}`} className="leading-7 tracking-[0.2px] text-[15px]">
                             {label}
                         </a>
                     ))}
                 </div>
-                <div className="flex-centered gap-6">
+                <div className="flex-centered gap-6 -mr-3">
                     <a href="https://twitter.com/" className="cursor-pointer">
                         <Icon icon='twitterLogo' />
                     </a>
