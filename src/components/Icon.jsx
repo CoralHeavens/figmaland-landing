@@ -13,6 +13,8 @@ import { ReactComponent as FeatureFast } from '../images/features/fastWay.svg';
 import { ReactComponent as Player } from '../images/player.svg';
 import { ReactComponent as Play } from '../images/play.svg';
 
+import { ReactComponent as Laptop } from '../images/laptop.svg';
+
 export const globalIcons = {
     logo: <Logo />,
     twitterLogo: <TwitterLogo />,
@@ -27,6 +29,8 @@ export const globalIcons = {
 
     player: <Player />,
     play: <Play />,
+
+    laptop: <Laptop />,
 }
 
 export default function Icon ({

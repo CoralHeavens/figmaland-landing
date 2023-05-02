@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button";
 
 const title = {
     top: 'The best products',
@@ -19,9 +20,7 @@ export default function TopSection() {
             <div className="mt-[27px] text-white text-[28px] leading-[40px] text-center font-normal tracking-[0.2px]">
                 {subTitle.top}<br/>{subTitle.bottom}
             </div>
-            <a href={window.origin} className="mt-22.5 text-white px-[62px] py-4 bg-primary font-normal text-xl leading-5 rounded-[35px]">
-                {linkLabel}
-            </a>
+            <Button label={linkLabel} />
         </section>
     )
 }
