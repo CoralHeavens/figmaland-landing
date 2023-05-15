@@ -15,6 +15,8 @@ import { ReactComponent as Play } from '../images/play.svg';
 
 import { ReactComponent as Laptop } from '../images/laptop.svg';
 
+import { ReactComponent as Letter } from "../images/newLetter.svg";
+
 export const globalIcons = {
     logo: <Logo />,
     twitterLogo: <TwitterLogo />,
@@ -31,6 +33,8 @@ export const globalIcons = {
     play: <Play />,
 
     laptop: <Laptop />,
+
+    letter: <Letter />,
 }
 
 export default function Icon ({

@@ -10,7 +10,9 @@ module.exports = {
       colors: {
         primary: '#2091F9',
         black: '#252B42',
-        secondBlack: '#374754'
+        secondBlack: '#374754',
+        lightGray: '#E8E8E8',
+        darkBlack: '#18171D',
       },
       backgroundImage: {
         '': ''
