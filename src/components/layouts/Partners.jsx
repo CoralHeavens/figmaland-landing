@@ -34,7 +34,7 @@ export default function Partners() {
                     ))}
                 </div>
             </div>
-            <Button label={buttonLabel} className='font-bold px-[58px] min-h-[60px] flex items-center' />
+            <Button label={buttonLabel} className='font-bold px-[58px] max-w-none min-h-[60px] flex items-center' />
         </section>
     )
 }

@@ -23,6 +23,8 @@ import { ReactComponent as Microsoft } from '../images/logos/microsoft.svg';
 import { ReactComponent as Uber } from '../images/logos/uber.svg';
 import { ReactComponent as Dropbox } from '../images/logos/dropbox.svg';
 
+import { ReactComponent as Ibm } from '../images/logos/ibm.svg';
+import { ReactComponent as Avatar } from '../images/avatar.svg';
 
 export const globalIcons = {
     logo: <Logo />,
@@ -48,6 +50,9 @@ export const globalIcons = {
     microsoft: <Microsoft />,
     uber: <Uber />,
     dropbox: <Dropbox />,
+
+    ibm: <Ibm />,
+    avatar: <Avatar />,
 }
 
 export default function Icon ({
