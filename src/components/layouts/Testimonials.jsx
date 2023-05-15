@@ -12,11 +12,11 @@ const buttonLabel = 'More Testimonials';
 export default function Testimonials() {
     return (
         <section className='pt-[111px] flex items-center flex-col'>
-            <div className='text-[48px] leading-[55px] tracking-[0.2px] font-normal'>
+            <div className='title'>
                 {title}
             </div>
             <Icon icon='ibm' className='mt-[90px]'/>
-            <div className='text-secondBlack text-[28px] leading-[40px] tracking-[0.2px]
+            <div className='text-secondBlack subtitle
                 max-w-[967px] text-center mt-[60px]'
             >
                 {description}

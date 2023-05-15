@@ -6,6 +6,7 @@ import TopSection from "./components/layouts/TopSection";
 import Subscribe from "./components/layouts/Subscribe";
 import Partners from "./components/layouts/Partners";
 import Testimonials from "./components/layouts/Testimonials";
+import Pricing from "./components/layouts/Pricing";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Subscribe />
         <Partners />
         <Testimonials />
+        <Pricing />
     </main>
   );
 }

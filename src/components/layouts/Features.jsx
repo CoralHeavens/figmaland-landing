@@ -11,7 +11,7 @@ const subTitle = {
 export default function Features() {
     return (
         <section className="w-full flex flex-col items-center">
-            <div className="text-black text-5xl leading-[55px] mt-[11px] overflow-hidden">
+            <div className="title mt-[11px] overflow-hidden">
                 {title}
             </div>
             <div className="text-secondBlack text-center text-[28px] leading-10 mt-[27px]">

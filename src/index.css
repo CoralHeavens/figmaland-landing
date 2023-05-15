@@ -23,3 +23,11 @@ body {
 .common-button {
     @apply bg-primary disabled:bg-lightGray text-white text-xl leading-5 rounded-[35px]
 }
+
+.title {
+    @apply text-5xl leading-[55px] tracking-[0.2px] font-normal
+}
+
+.subtitle {
+    @apply text-[28px] leading-10 tracking-[0.2px]
+}

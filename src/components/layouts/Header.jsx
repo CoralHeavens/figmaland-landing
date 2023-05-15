@@ -1,28 +1,6 @@
 import React from "react";
 import Icon from "../Icon";
-
-const headerLinks = [
-    {
-        label: 'Home',
-        link: './home'
-    },
-    {
-        label: 'Product',
-        link: './product'
-    },
-    {
-        label: 'Pricing',
-        link: './pricing'
-    },
-    {
-        label: 'About',
-        link: './about'
-    },
-    {
-        label: 'Contact',
-        link: './contact'
-    }
-]
+import {headerLinks} from "../../constants/headerLinks";
 
 export default function Header () {
     return (

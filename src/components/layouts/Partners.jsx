@@ -11,7 +11,7 @@ export default function Partners() {
     return (
         <section className='w-full py-20 flex items-center flex-col'>
             <div className='mt-[50px] flex flex-col items-center font-normal'>
-                <div className='text-[48px] leading-[55px]'>
+                <div className='title'>
                     {title}
                 </div>
                 <div className='text-[28px] leading-10 tracking-[0.2px] text-center text-secondBlack

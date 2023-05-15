@@ -27,7 +27,7 @@ export default function Subscribe() {
                 <div className='text-xl font-bold'>
                     {title}
                 </div>
-                <div className='mt-[17px] max-w-[324px] text-[48px] leading-[55px] font-normal'>
+                <div className='mt-[17px] max-w-[324px] title'>
                     {content}
                 </div>
                 <div className='mt-[35px] pl-2.5'>
