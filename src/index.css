@@ -19,3 +19,7 @@ body {
 
     @apply flex justify-center items-center;
 }
+
+.common-button {
+    @apply bg-primary disabled:bg-lightGray text-white text-xl leading-5 rounded-[35px]
+}

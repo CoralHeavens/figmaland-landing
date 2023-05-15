@@ -9,7 +9,7 @@ export default function Button({
         <a 
             href={window.origin} 
             className={joinClassNames(
-                'mt-22.5 text-white px-[62px] py-4 bg-primary font-normal text-xl leading-5 rounded-[35px]',
+                'common-button max-w-[240px] mt-22.5 px-[62px] py-4',
                 className
             )}>
             {label}

@@ -50,8 +50,7 @@ export default function Subscribe() {
                         placeholder={emailPlaceholder}
                     />
                     <button
-                        className='bg-primary disabled:bg-lightGray text-white flex justify-center items-center
-                            text-xl leading-5 py-[19px] px-[38px] rounded-[35px]'
+                        className='py-[19px] px-[38px] common-button flex justify-center items-center'
                         onClick={sendEmail}
                         disabled={!isValidEmail}
                     >

@@ -17,6 +17,13 @@ import { ReactComponent as Laptop } from '../images/laptop.svg';
 
 import { ReactComponent as Letter } from "../images/newLetter.svg";
 
+import { ReactComponent as Google } from '../images/logos/google.svg';
+import { ReactComponent as Amazon } from '../images/logos/amazon.svg';
+import { ReactComponent as Microsoft } from '../images/logos/microsoft.svg';
+import { ReactComponent as Uber } from '../images/logos/uber.svg';
+import { ReactComponent as Dropbox } from '../images/logos/dropbox.svg';
+
+
 export const globalIcons = {
     logo: <Logo />,
     twitterLogo: <TwitterLogo />,
@@ -35,6 +42,12 @@ export const globalIcons = {
     laptop: <Laptop />,
 
     letter: <Letter />,
+
+    google: <Google />,
+    amazon: <Amazon />,
+    microsoft: <Microsoft />,
+    uber: <Uber />,
+    dropbox: <Dropbox />,
 }
 
 export default function Icon ({

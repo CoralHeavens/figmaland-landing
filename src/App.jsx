@@ -4,6 +4,7 @@ import Header from "./components/layouts/Header";
 import Organize from "./components/layouts/Organize";
 import TopSection from "./components/layouts/TopSection";
 import Subscribe from "./components/layouts/Subscribe";
+import Partners from "./components/layouts/Partners";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Features />
         <Organize />
         <Subscribe />
+        <Partners />
     </main>
   );
 }

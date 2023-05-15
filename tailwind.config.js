@@ -13,6 +13,7 @@ module.exports = {
         secondBlack: '#374754',
         lightGray: '#E8E8E8',
         darkBlack: '#18171D',
+        border: '#D8D8D8',
       },
       backgroundImage: {
         '': ''
