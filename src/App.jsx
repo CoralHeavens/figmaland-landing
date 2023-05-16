@@ -7,9 +7,11 @@ import Subscribe from "./components/layouts/Subscribe";
 import Partners from "./components/layouts/Partners";
 import Testimonials from "./components/layouts/Testimonials";
 import Pricing from "./components/layouts/Pricing";
+import Footer from "./components/layouts/Footer";
+import ContactUs from "./components/layouts/ContactUs";
 
 function App() {
-  return (
+    return (
     <main>
         <Icon icon='background' className="absolute -z-10"/>
         <header className="h-[52vw] mb-12">
@@ -22,11 +24,12 @@ function App() {
         <Partners />
         <Testimonials />
         <Pricing />
+        <ContactUs />
         <footer>
-
+            <Footer />
         </footer>
     </main>
-  );
+    );
 }
 
 export default App;

@@ -19,7 +19,8 @@ module.exports = {
         '': ''
       },
       fontFamily: {
-        'graphic': ['Graphic', 'sans-serif']
+        'graphic': ['Graphic', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif']
       },
       margin: {
         '10.5': '42px',

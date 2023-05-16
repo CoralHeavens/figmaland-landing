@@ -1,6 +1,7 @@
 import React from "react";
 import Icon from "../Icon";
 import {headerLinks} from "../../constants/headerLinks";
+import SocialMediaLinks from "../SocialMediaLinks";
 
 export default function Header () {
     return (
@@ -22,17 +23,7 @@ export default function Header () {
                         </a>
                     ))}
                 </div>
-                <div className="flex-centered gap-6 -mr-3">
-                    <a href="https://twitter.com/" className="cursor-pointer">
-                        <Icon icon='twitterLogo' />
-                    </a>
-                    <a href="https://facebook.com/" className="cursor-pointer">
-                        <Icon icon='facebookLogo' />
-                    </a>
-                    <a href="https://linkedin.com/" className="cursor-pointer">
-                        <Icon icon='linkedInLogo' />
-                    </a>
-                </div>
+                <SocialMediaLinks />
             </header>
         </section>
     )

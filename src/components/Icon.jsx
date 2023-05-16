@@ -26,6 +26,10 @@ import { ReactComponent as Dropbox } from '../images/logos/dropbox.svg';
 import { ReactComponent as Ibm } from '../images/logos/ibm.svg';
 import { ReactComponent as Avatar } from '../images/avatar.svg';
 
+import { ReactComponent as GPS } from '../images/gps.svg';
+import { ReactComponent as Mobile } from '../images/mobile.svg';
+
+
 export const globalIcons = {
     logo: <Logo />,
     twitterLogo: <TwitterLogo />,
@@ -53,6 +57,9 @@ export const globalIcons = {
 
     ibm: <Ibm />,
     avatar: <Avatar />,
+
+    gps: <GPS />,
+    mobile: <Mobile />,
 }
 
 export default function Icon ({
