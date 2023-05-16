@@ -12,16 +12,19 @@ function App() {
   return (
     <main>
         <Icon icon='background' className="absolute -z-10"/>
-        <div className="h-[52vw] mb-12">
+        <header className="h-[52vw] mb-12">
             <Header />
             <TopSection />
-        </div>
+        </header>
         <Features />
         <Organize />
         <Subscribe />
         <Partners />
         <Testimonials />
         <Pricing />
+        <footer>
+
+        </footer>
     </main>
   );
 }

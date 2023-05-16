@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: Graphic;
-    src: './fonts/Graphik/';
+    src: './fonts/Graphik';
 }
 
 * {
@@ -13,6 +13,14 @@
 
 body {
     @apply overflow-x-hidden text-black
+}
+
+button, a {
+    @apply hover:opacity-80
+}
+
+button:disabled {
+    @apply hover:opacity-100
 }
 
 .flex-centered {

@@ -1,14 +1,20 @@
 export const prices = [
     {
         name: 'Free',
-        price: '0'
+        description: 'Organize across all apps by hand',
+        price: '0',
+        currency: '$',
     },
     {
         name: 'Standard',
-        price: '10'
+        description: 'Organize across all apps by hand',
+        price: '10',
+        currency: '$',
     },
     {
         name: 'Business',
-        price: '99'
+        description: 'Organize across all apps by hand',
+        price: '99',
+        currency: '$',
     },
 ]
