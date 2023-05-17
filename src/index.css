@@ -13,6 +13,10 @@
     @apply text-base font-graphic
 }
 
+html:has(.popup-no-scroll) {
+    overflow: hidden;
+}
+
 body {
     @apply overflow-x-hidden text-black
 }

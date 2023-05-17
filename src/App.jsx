@@ -9,25 +9,30 @@ import Testimonials from "./components/layouts/Testimonials";
 import Pricing from "./components/layouts/Pricing";
 import Footer from "./components/layouts/Footer";
 import ContactUs from "./components/layouts/ContactUs";
+import useMediaQuery from "./hooks/useMediaQuery";
+import {QUERIES} from "./constants/mediaQueries";
 
 function App() {
+    const isMobile = !useMediaQuery(QUERIES.tablet);
+
     return (
     <main>
-        <Icon icon='background' className="absolute -z-10"/>
-        <header className="h-[52vw] mb-12">
-            <Header />
-            <TopSection />
+        <div className='absolute -z-10 bg-[#000000] w-full h-[752px] xl:hidden' />
+        <Icon icon={isMobile ? 'backgroundMobile' : 'background'} className="absolute -z-10 !w-[418px]" />
+        <header className="lg:h-[52vw] mb-12 w-screen">
+            <Header isMobile={isMobile} />
+            <TopSection isMobile={isMobile} />
         </header>
-        <Features />
-        <Organize />
-        <Subscribe />
-        <Partners />
-        <Testimonials />
-        <Pricing />
-        <ContactUs />
-        <footer>
-            <Footer />
-        </footer>
+        {/*<Features />*/}
+        {/*<Organize />*/}
+        {/*<Subscribe />*/}
+        {/*<Partners />*/}
+        {/*<Testimonials />*/}
+        {/*<Pricing />*/}
+        {/*<ContactUs />*/}
+        {/*<footer>*/}
+        {/*    <Footer />*/}
+        {/*</footer>*/}
     </main>
     );
 }

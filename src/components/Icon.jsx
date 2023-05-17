@@ -32,6 +32,9 @@ import { ReactComponent as Mail } from "../images/mail.svg";
 
 import { ReactComponent as Map } from "../images/map.svg";
 
+import { ReactComponent as BackgroundMobile } from "../images/mobileBackground.svg";
+import { ReactComponent as HeaderButton } from "../images/headerButton.svg";
+
 
 export const globalIcons = {
     logo: <Logo />,
@@ -66,6 +69,9 @@ export const globalIcons = {
     mail: <Mail />,
 
     map: <Map />,
+
+    backgroundMobile: <BackgroundMobile />,
+    headerButton: <HeaderButton />
 }
 
 export default function Icon ({
