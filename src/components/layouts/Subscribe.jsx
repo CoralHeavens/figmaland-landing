@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Icon from "../Icon";
+import {validate} from "../../helpers/validate";
 
 const title = 'At your fingertips';
 const content = 'Lightning fast prototyping';
@@ -9,8 +10,6 @@ const subscribeContent = 'Available exclusively on Figmaland';
 
 const emailPlaceholder = 'Your Email';
 const emailButton = 'Subscribe';
-
-const emailRegex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 export default function Subscribe() {
     const [email, updateEmail] = useState('');
@@ -44,7 +43,7 @@ export default function Subscribe() {
                             bg-lightGray text-sm leading-4 placeholder-darkBlack'
                         onChange={(e) => {
                             updateEmail(e.target.value);
-                            updateIsValidEmail(!!e.target.value.match(emailRegex));
+                            updateIsValidEmail(validate(e.target.value, 'email'));
                         }}
                         value={email}
                         placeholder={emailPlaceholder}

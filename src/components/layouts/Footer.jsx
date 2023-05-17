@@ -42,14 +42,14 @@ export default function Footer() {
             ))}
             <div className='flex flex-col text-white font-roboto text-[15px] tracking-[0.2px] gap-4 ml-12'>
                 <div className='flex gap-4 items-center'>
-                    <Icon className='' icon='gps' />
+                    <Icon className='fill-white' icon='gps' />
                     {address}
                 </div>
                 <div className='flex gap-4 items-center'>
-                    <Icon className='' icon='mobile' />
+                    <Icon className='fill-white' icon='mobile' />
                     {number}
                 </div>
-                <SocialMediaLinks className='!justify-start mt-5' />
+                <SocialMediaLinks className='!justify-start mt-5' svgClassName='fill-white' />
             </div>
         </section>
     )

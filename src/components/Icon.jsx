@@ -28,6 +28,9 @@ import { ReactComponent as Avatar } from '../images/avatar.svg';
 
 import { ReactComponent as GPS } from '../images/gps.svg';
 import { ReactComponent as Mobile } from '../images/mobile.svg';
+import { ReactComponent as Mail } from "../images/mail.svg";
+
+import { ReactComponent as Map } from "../images/map.svg";
 
 
 export const globalIcons = {
@@ -60,6 +63,9 @@ export const globalIcons = {
 
     gps: <GPS />,
     mobile: <Mobile />,
+    mail: <Mail />,
+
+    map: <Map />,
 }
 
 export default function Icon ({

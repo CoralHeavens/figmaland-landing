@@ -41,3 +41,12 @@ button:disabled {
 .subtitle {
     @apply text-[28px] leading-10 tracking-[0.2px]
 }
+
+form > input {
+    @apply w-[353px] h-[54px] bg-formBg border-[1px] border-lightGray rounded-[39px] px-5 text-[15px]
+    text-darkBlack placeholder-darkBlack
+}
+
+.contact-map-info {
+    @apply text-center text-secondBlack tracking-[0.1px] leading-[23px] flex flex-col gap-5
+}

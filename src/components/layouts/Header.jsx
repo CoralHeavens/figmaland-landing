@@ -23,7 +23,7 @@ export default function Header () {
                         </a>
                     ))}
                 </div>
-                <SocialMediaLinks />
+                <SocialMediaLinks svgClassName='fill-white' />
             </header>
         </section>
     )

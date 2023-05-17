@@ -14,6 +14,11 @@ module.exports = {
         lightGray: '#E8E8E8',
         darkBlack: '#18171D',
         border: '#D8D8D8',
+        formBg: '#F5F5F5',
+        formBorder: '#DDDDDD',
+      },
+      boxShadow: {
+        'form': '0px 13px 19px rgba(0, 0, 0, 0.07)',
       },
       backgroundImage: {
         '': ''
