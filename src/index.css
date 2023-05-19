@@ -18,7 +18,7 @@ html:has(.popup-no-scroll) {
 }
 
 body {
-    @apply overflow-x-hidden text-black
+    @apply max-w-[100vw] overflow-x-hidden text-black
 }
 
 button, a {
@@ -53,4 +53,12 @@ form > input {
 
 .contact-map-info {
     @apply text-center text-secondBlack tracking-[0.1px] leading-[23px] flex flex-col gap-5
+}
+
+.popup-no-scroll {
+    @apply z-[99]
+}
+
+.inner-hidden * {
+    @apply hidden
 }

@@ -1,6 +1,9 @@
 import React from "react";
 import Icon from "../Icon";
 import {features} from "../../constants/features";
+import player from '../../images/player.png';
+import mobilePlayer from '../../images/mobilePlayer.png';
+import joinClassNames from "../../helpers/joinClassNames";
 
 const title = 'Features';
 const subTitle = {
@@ -8,16 +11,39 @@ const subTitle = {
     bottom: 'Slate is designed for freelancers'
 }
 
+const Player = ({
+    className
+}) => (
+    <div className={joinClassNames(
+        "mt-16 lg:mt-33 relative flex flex-col items-center justify-center",
+        className,
+    )}>
+        <img className='hidden lg:block' src={player} alt='' />
+        <img className='lg:hidden' src={mobilePlayer} alt='' />
+        <a href="https://www.youtube.com/" className="absolute flex-centered rounded-full w-16 lg:w-playButton h-16 lg:h-playButton bg-primary">
+            <Icon className='hidden lg:block' icon='play'/>
+            <Icon className='lg:hidden' icon='mobilePlay'/>
+        </a>
+    </div>
+)
+
 export default function Features() {
     return (
-        <section className="w-full flex flex-col items-center">
+        <section className="w-full flex flex-col items-center mt-[95vw] mb-24 lg:my-0">
             <div className="title mt-[11px] overflow-hidden">
                 {title}
             </div>
-            <div className="text-secondBlack text-center text-[28px] leading-10 mt-[27px]">
-                {subTitle.top}<br/>{subTitle.bottom}
+            <div className="text-center max-w-[265px] lg:max-w-none mt-[27px]">
+                <span className='text-secondBlack text-[28px] leading-10'>
+                    {subTitle.top}
+                </span>
+                <br/>
+                <span className='hidden lg:inline text-secondBlack text-[28px] leading-10'>
+                    {subTitle.bottom}
+                </span>
             </div>
-            <div className="grid grid-cols-3 gap-[52px] mt-22.5">
+            <Player className='lg:hidden' />
+            <div className="flex flex-col lg:grid grid-cols-3 gap-20 lg:gap-[52px] py-[18px] px-3 lg:p-0 mt-14 lg:mt-22.5">
                 {features.map(({ icon, title, subTitle }) => (
                     <div key={icon} className="flex flex-col items-center">
                         <Icon icon={icon} className='mb-5'/>
@@ -32,12 +58,7 @@ export default function Features() {
                     </div>
                 ))}
             </div>
-            <div className="mt-33 relative flex flex-col items-center justify-center">
-                <Icon icon='player'/>
-                <a href="https://www.youtube.com/" className="absolute flex-centered rounded-full w-playButton h-playButton bg-primary">
-                    <Icon icon='play'/>
-                </a>
-            </div>
+            <Player className='hidden lg:flex' />
         </section>
     )
 }

@@ -9,21 +9,18 @@ import Testimonials from "./components/layouts/Testimonials";
 import Pricing from "./components/layouts/Pricing";
 import Footer from "./components/layouts/Footer";
 import ContactUs from "./components/layouts/ContactUs";
-import useMediaQuery from "./hooks/useMediaQuery";
-import {QUERIES} from "./constants/mediaQueries";
+import mobileBackground from './images/mobileBackground.png';
 
 function App() {
-    const isMobile = !useMediaQuery(QUERIES.tablet);
-
     return (
     <main>
-        <div className='absolute -z-10 bg-[#000000] w-full h-[752px] xl:hidden' />
-        <Icon icon={isMobile ? 'backgroundMobile' : 'background'} className="absolute -z-10 !w-[418px]" />
+        <img className='lg:hidden absolute -z-10 !w-screen h-full' src={mobileBackground} alt=''/>
+        <Icon icon='background' className="hidden lg:block absolute -z-10 !w-screen" />
         <header className="lg:h-[52vw] mb-12 w-screen">
-            <Header isMobile={isMobile} />
-            <TopSection isMobile={isMobile} />
+            <Header />
+            <TopSection />
         </header>
-        {/*<Features />*/}
+        <Features />
         {/*<Organize />*/}
         {/*<Subscribe />*/}
         {/*<Partners />*/}

@@ -16,19 +16,18 @@ const subTitle = {
 }
 const linkLabel = 'Try For Free'
 
-export default function TopSection({
-    isMobile
-}) {
+export default function TopSection() {
     return (
         <section className="w-full flex flex-col items-center pt-[206px] lg:pt-[100px]">
-            <div className="text-white text-[48px] leading-[55px] lg:text-[74px] lg:leading-[84px] text-center lg:font-bold tracking-[0.2px]">
-                {isMobile ? (
-                    <>{mobileTitle.top}<br/>{mobileTitle.middle}<br/>{mobileTitle.bottom}</>
-                ):(
-                    <>{title.top}<br/>{title.bottom}</>
-                )}
+            <div className="text-white text-center">
+                <span className='title lg:hidden lg:text-[74px] lg:leading-[84px] lg:font-bold'>
+                    {mobileTitle.top}<br/>{mobileTitle.middle}<br/>{mobileTitle.bottom}
+                </span>
+                <span className='title hidden lg:inline lg:text-[74px] lg:leading-[84px] lg:font-bold'>
+                    {title.top}<br/>{title.bottom}
+                </span>
             </div>
-            <div className="mt-[27px] text-white text-[28px] leading-[40px] text-center font-normal tracking-[0.2px]">
+            <div className="mx-12 mt-[27px] text-white text-[28px] leading-[40px] text-center font-normal tracking-[0.2px]">
                 {subTitle.top}<br/>{subTitle.bottom}
             </div>
             <Button label={linkLabel} />
