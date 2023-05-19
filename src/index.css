@@ -22,11 +22,11 @@ body {
 }
 
 button, a {
-    @apply hover:opacity-80
+    @apply lg:hover:opacity-80
 }
 
 button:disabled {
-    @apply hover:opacity-100
+    @apply lg:hover:opacity-100
 }
 
 .flex-centered {
@@ -47,12 +47,12 @@ button:disabled {
 }
 
 form > input {
-    @apply w-[353px] h-[54px] bg-formBg border-[1px] border-lightGray rounded-[39px] px-5 text-[15px]
+    @apply lg:w-[353px] h-[54px] bg-formBg border-[1px] border-lightGray rounded-[39px] px-5 text-[15px]
     text-darkBlack placeholder-darkBlack
 }
 
 .contact-map-info {
-    @apply text-center text-secondBlack tracking-[0.1px] leading-[23px] flex flex-col gap-5
+    @apply text-center text-secondBlack tracking-[0.1px] leading-[23px] flex gap-5
 }
 
 .popup-no-scroll {

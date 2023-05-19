@@ -25,11 +25,11 @@ function App() {
         <Subscribe />
         <Partners />
         <Testimonials />
-        {/*<Pricing />*/}
-        {/*<ContactUs />*/}
-        {/*<footer>*/}
-        {/*    <Footer />*/}
-        {/*</footer>*/}
+        <Pricing />
+        <ContactUs />
+        <footer>
+            <Footer />
+        </footer>
     </main>
     );
 }

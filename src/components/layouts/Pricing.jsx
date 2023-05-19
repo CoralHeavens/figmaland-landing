@@ -4,8 +4,9 @@ import joinClassNames from "../../helpers/joinClassNames";
 import Button from "../Button";
 
 const title = 'Pricing';
-const subTitle = 'Most calendars are designed for teams. ' +
-    'Slate is designed for freelancers';
+const subTitle = 'Most calendars are designed for teams. Slate is designed for freelancers';
+const mobileSubTitle = 'Most calendars are designed for teams.';
+
 const pricePlan = 'Per Month';
 const priceFeature = 'Pricing Feature';
 const buttonLabel = 'Order Now';
@@ -18,10 +19,13 @@ export default function Pricing() {
             <div className='text-white title'>
                 {title}
             </div>
-            <div className='text-white subtitle max-w-[532px] mt-[27px] text-center'>
+            <div className='hidden lg:block text-white subtitle max-w-[532px] mt-[27px] text-center'>
                 {subTitle}
             </div>
-            <div className='mt-[90px] mb-[100px] flex gap-[50px]'>
+            <div className='lg:hidden text-white subtitle max-w-[65vw] mt-[27px] text-center'>
+                {mobileSubTitle}
+            </div>
+            <div className='mt-[90px] mb-[100px] flex flex-col lg:flex-row gap-[50px]'>
                 {prices.map(({name, description, price, currency}, index) => {
                     const isActive = activeTab === index;
                     return (
@@ -32,7 +36,7 @@ export default function Pricing() {
                             }}
                             className={joinClassNames(
                                 'p-10 w-[335px] flex flex-col items-center rounded-[10px]',
-                                isActive ? 'bg-primary text-white py-20' : 'bg-white text-black my-10'
+                                isActive ? 'bg-primary text-white lg:py-20' : 'bg-white text-black lg:my-10'
                             )}
                         >
                             <div className='subtitle font-bold'>
@@ -53,7 +57,7 @@ export default function Pricing() {
                                     <div>{pricePlan}</div>
                                 </div>
                             </div>
-                            <div className='mt-[18px]'>
+                            <div className='mt-2 lg:mt-[18px]'>
                                 {Array.from({length: 5}).map((_, index) => (
                                     <div
                                         className='mt-5 text-[15px] leading-7 tracking-[0.2px]'
@@ -64,7 +68,7 @@ export default function Pricing() {
                                 ))}
                             </div>
                             <Button className={joinClassNames(
-                                'w-full h-14',
+                                'w-full h-14 !mt-10 lg:!mt-22.5',
                                 isActive && '!bg-white !text-primary'
                             )} label={buttonLabel} />
                         </button>

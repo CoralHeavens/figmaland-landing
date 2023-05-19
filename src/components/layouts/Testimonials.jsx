@@ -17,7 +17,7 @@ export default function Testimonials() {
                 {title}
             </div>
             <Icon icon='ibm' className='mt-[90px]'/>
-            <div className='text-secondBlack text-sm lg:subtitle
+            <div className='text-secondBlack text-sm lg:text-[28px] lg:leading-10 lg:tracking-[0.2px]
                 max-w-[65vw] lg:max-w-[967px] text-center mt-[60px]'
             >
                 {description}
@@ -27,7 +27,7 @@ export default function Testimonials() {
                 <div>
                     <span className={joinClassNames(
                         'leading-[15px] font-bold tracking-[0.08px] text-[10px]',
-                        'text-secondBlack lg:leading-[23px] lg:tracking-[0.1px]',
+                        'text-secondBlack lg:text-base lg:leading-[23px] lg:tracking-[0.1px]',
                     )}>
                         {userInfo}
                     </span>

@@ -23,9 +23,9 @@ const number = '(239) 555-0108';
 
 export default function Footer() {
     return (
-        <section className='w-screen flex justify-center bg-black pt-40 pb-[150px] gap-32'>
+        <section className='w-screen flex flex-col items-center lg:items-start lg:flex-row justify-center bg-black py-32 lg:pt-40 lg:pb-[150px] gap-20 lg:gap-32'>
             {columns.map(({title, array}, index) => (
-                <div key={`${title}${index}`} className='flex flex-col text-white'>
+                <div key={`${title}${index}`} className='flex flex-col items-center lg:items-start text-white'>
                     <div className='subtitle font-bold mb-[25px]'>
                         {title}
                     </div>
@@ -40,12 +40,12 @@ export default function Footer() {
                     ))}
                 </div>
             ))}
-            <div className='flex flex-col text-white font-roboto text-[15px] tracking-[0.2px] gap-4 ml-12'>
+            <div className='flex flex-col items-center lg:items-start text-white font-roboto text-[15px] tracking-[0.2px] gap-4 lg:ml-12'>
                 <div className='flex gap-4 items-center'>
                     <Icon className='fill-white' icon='gps' />
                     {address}
                 </div>
-                <div className='flex gap-4 items-center'>
+                <div className='flex gap-4 items-center -ml-32 lg:ml-0'>
                     <Icon className='fill-white' icon='mobile' />
                     {number}
                 </div>

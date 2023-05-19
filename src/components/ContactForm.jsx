@@ -27,7 +27,7 @@ export default function ContactForm({
 
     return (
         <form
-            className='flex flex-col px-[50px] py-[52px] border-formBorder border-[1px] rounded-[20px] shadow-form gap-[45px]'
+            className='flex flex-col px-[50px] max-w-[90vw] lg:max-w-none py-[52px] border-formBorder border-[1px] rounded-[20px] shadow-form gap-[45px]'
             onSubmit={onLocalSubmit}
         >
             <div className='subtitle tracking-[0.1px] font-bold w-full text-center'>
@@ -46,7 +46,7 @@ export default function ContactForm({
                 onChange={({target}) => updateEmail(target.value)}
             />
             <textarea
-                className='resize-none px-5 bg-formBg border-[1px] border-lightGray py-[23px] h-[193px]'
+                className='resize-none placeholder-darkBlack px-5 bg-formBg border-[1px] border-lightGray py-[23px] h-[193px]'
                 maxLength={messageLimit}
                 placeholder={messagePlaceholder}
                 onChange={({target}) => updateMessage(target.value)}
