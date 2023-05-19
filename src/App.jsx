@@ -21,8 +21,8 @@ function App() {
             <TopSection />
         </header>
         <Features />
-        {/*<Organize />*/}
-        {/*<Subscribe />*/}
+        <Organize />
+        <Subscribe />
         {/*<Partners />*/}
         {/*<Testimonials />*/}
         {/*<Pricing />*/}

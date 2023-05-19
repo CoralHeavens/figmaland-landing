@@ -29,7 +29,7 @@ const Player = ({
 
 export default function Features() {
     return (
-        <section className="w-full flex flex-col items-center mt-[95vw] mb-24 lg:my-0">
+        <section className="w-full flex flex-col items-center mt-[95vw] lg:my-0">
             <div className="title mt-[11px] overflow-hidden">
                 {title}
             </div>

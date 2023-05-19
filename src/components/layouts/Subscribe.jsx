@@ -1,9 +1,15 @@
 import React, {useState} from "react";
 import Icon from "../Icon";
 import {validate} from "../../helpers/validate";
+import mobileLetter from '../../images/mobileLetter.png';
 
 const title = 'At your fingertips';
 const content = 'Lightning fast prototyping';
+const mobileContent = 'Newsletter';
+const mobileSubContent = {
+    top: 'Most calendars are designed for teams.',
+    bottom: ' Slate is designed for freelancers',
+};
 
 const subscribeTitle = 'Subscribe to our Newsletter';
 const subscribeContent = 'Available exclusively on Figmaland';
@@ -20,16 +26,27 @@ export default function Subscribe() {
     }
 
     return (
-        <section className='py-[52px] w-full flex justify-center items-center gap-[113px]'>
-            <Icon icon='letter' />
-            <div>
-                <div className='text-xl font-bold'>
+        <section className='py-[52px] w-full flex flex-col mt-40 lg:flex-row justify-center items-center gap-[113px]'>
+            <Icon icon='letter' className='hidden lg:block' />
+            <div className='flex flex-col items-center lg:block'>
+                <div className='text-xl font-bold text-center lg:text-left'>
                     {title}
                 </div>
-                <div className='mt-[17px] max-w-[324px] title'>
+                <div className='mt-[17px] max-w-[324px] title text-left hidden lg:block'>
                     {content}
                 </div>
-                <div className='mt-[35px] pl-2.5'>
+                <div className='mt-[17px] title text-center lg:hidden'>
+                    {mobileContent}
+                </div>
+                <div className='mt-[27px] text-secondBlack lg:hidden subtitle truncate text-center max-w-[90vw]'>
+                    {mobileSubContent.top}
+                    <br/>
+                    {mobileSubContent.bottom}
+                </div>
+                <div className='w-full flex justify-center'>
+                    <img className='lg:hidden mt-24 max-w-[95vw]' src={mobileLetter} alt='' />
+                </div>
+                <div className='mt-24 lg:mt-[35px] pl-2.5'>
                     <div className='text-xl font-bold'>
                         {subscribeTitle}
                     </div>
@@ -37,7 +54,7 @@ export default function Subscribe() {
                         {subscribeContent}
                     </div>
                 </div>
-                <div className='mt-9 flex pl-2.5 gap-3'>
+                <div className='w-full lg:w-fit mt-9 flex flex-col lg:flex-row px-8 lg:pl-2.5 lg:pr-0 gap-3'>
                     <input
                         className='h-[54px] rounded-[39px] px-[39px] py-[19px]
                             bg-lightGray text-sm leading-4 placeholder-darkBlack'
