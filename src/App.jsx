@@ -23,8 +23,8 @@ function App() {
         <Features />
         <Organize />
         <Subscribe />
-        {/*<Partners />*/}
-        {/*<Testimonials />*/}
+        <Partners />
+        <Testimonials />
         {/*<Pricing />*/}
         {/*<ContactUs />*/}
         {/*<footer>*/}
