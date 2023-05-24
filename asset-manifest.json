@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/figmaland-landing/static/css/main.107d0b71.css",
-    "main.js": "/figmaland-landing/static/js/main.c026dec2.js",
+    "main.css": "/figmaland-landing/static/css/main.96de8898.css",
+    "main.js": "/figmaland-landing/static/js/main.36858bfb.js",
     "static/media/background.svg": "/figmaland-landing/static/media/background.c4fc761bcc8b92ef7b5ff8bccb08f908.svg",
     "static/media/player.png": "/figmaland-landing/static/media/player.fac37f4dca6944b6e853.png",
     "static/media/mobileBackground.png": "/figmaland-landing/static/media/mobileBackground.24b8aad985f49708fdbf.png",
@@ -32,11 +32,11 @@
     "static/media/mobilePlay.svg": "/figmaland-landing/static/media/mobilePlay.7ffab34c69efbd4aa504f1e226c30205.svg",
     "static/media/play.svg": "/figmaland-landing/static/media/play.be56e905d8378f1678f1398e7a92245e.svg",
     "static/media/headerButton.svg": "/figmaland-landing/static/media/headerButton.928a4433a4a82d5ac98c25af79da7f87.svg",
-    "main.107d0b71.css.map": "/figmaland-landing/static/css/main.107d0b71.css.map",
-    "main.c026dec2.js.map": "/figmaland-landing/static/js/main.c026dec2.js.map"
+    "main.96de8898.css.map": "/figmaland-landing/static/css/main.96de8898.css.map",
+    "main.36858bfb.js.map": "/figmaland-landing/static/js/main.36858bfb.js.map"
   },
   "entrypoints": [
-    "static/css/main.107d0b71.css",
-    "static/js/main.c026dec2.js"
+    "static/css/main.96de8898.css",
+    "static/js/main.36858bfb.js"
   ]
 }
