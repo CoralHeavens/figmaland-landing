@@ -5,13 +5,17 @@ import joinClassNames from "../helpers/joinClassNames";
 export default function SocialMediaLinks({
     className,
     svgClassName,
+    alignText = false,
 }) {
     return (
         <div className={joinClassNames(
             "flex-centered gap-6 -mr-3",
             className
         )}>
-            <a href="https://twitter.com/" className="cursor-pointer">
+            <a href="https://twitter.com/" className={joinClassNames(
+                "cursor-pointer",
+                alignText && '-ml-2'
+            )}>
                 <Icon icon='twitterLogo' className={svgClassName} />
             </a>
             <a href="https://facebook.com/" className="cursor-pointer">

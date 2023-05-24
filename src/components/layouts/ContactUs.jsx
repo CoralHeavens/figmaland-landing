@@ -17,7 +17,7 @@ export default function ContactUs() {
     }
 
     return (
-        <section className='w-full pt-[213px] pb-[102px] flex flex-col items-center'>
+        <section className='w-full pt-[213px] pb-[149px] lg:pb-[102px] flex flex-col items-center'>
             <div className='title'>
                 {title}
             </div>
@@ -27,22 +27,22 @@ export default function ContactUs() {
             <div className='lg:hidden max-w-[265px] subtitle mt-[27px] text-center text-secondBlack'>
                 {mobileSubTitle}
             </div>
-            <SocialMediaLinks svgClassName='fill-primary' className='lg:!hidden w-full !mr-0 mt-[70px] lg:mt-[75px] lg:!justify-start' />
-            <div className='mt-24 lg:mt-[60px] flex flex-col-reverse lg:flex-row gap-[60px]'>
+            <SocialMediaLinks svgClassName='fill-primary' className='lg:!hidden w-full !mr-0 mt-[70px]' />
+            <div className='mt-24 lg:mt-[60px] flex items-center flex-col-reverse lg:flex-row gap-[60px]'>
                 <ContactForm onSubmit={onFormSubmit} />
                 <div className='flex flex-col gap-[70px] items-center'>
                     <div className='w-full flex flex-col lg:flex-row items-center lg:gap-[35px] px-9'>
-                        <div className='contact-map-info lg:flex-col lg:max-w-[293px] items-center lg:items-start w-full lg:w-fit'>
+                        <div className='-ml-4 lg:ml-0 contact-map-info lg:flex-col lg:max-w-[293px] items-center lg:items-start w-full lg:w-fit'>
                             <Icon icon='gps' className='fill-primary lg:w-full flex justify-center' />
                             <span className='text-left'>
                                 {address}
                             </span>
                         </div>
-                        <div className='contact-map-info mt-8 lg:mt-0 lg:flex-col lg:max-w-[137px] items-center lg:items-start w-full lg:w-fit'>
+                        <div className='-ml-4 lg:ml-0 contact-map-info mt-[30px] lg:mt-0 lg:flex-col lg:max-w-[137px] items-center lg:items-start w-full lg:w-fit'>
                             <Icon icon='mobile' className='fill-primary lg:w-full flex justify-center' />
                             {number}
                         </div>
-                        <div className='contact-map-info mt-5 lg:mt-0 lg:flex-col lg:max-w-[245px] items-center lg:items-start w-full lg:w-fit'>
+                        <div className='contact-map-info mt-[30px] lg:mt-0 lg:flex-col lg:max-w-[245px] items-center lg:items-start w-full lg:w-fit'>
                             <Icon icon='mail' className='fill-primary lg:w-full flex justify-center' />
                             {email}
                         </div>

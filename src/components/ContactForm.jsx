@@ -27,7 +27,7 @@ export default function ContactForm({
 
     return (
         <form
-            className='flex flex-col px-[50px] max-w-[90vw] lg:max-w-none py-[52px] border-formBorder border-[1px] rounded-[20px] shadow-form gap-[45px]'
+            className='flex flex-col w-full max-w-[90vw] lg:max-w-none px-[50px] py-[52px] border-formBorder border-[1px] rounded-[20px] shadow-form gap-[45px]'
             onSubmit={onLocalSubmit}
         >
             <div className='subtitle tracking-[0.1px] font-bold w-full text-center'>
