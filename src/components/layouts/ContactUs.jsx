@@ -24,10 +24,10 @@ export default function ContactUs() {
             <div className='hidden lg:block subtitle max-w-[532px] mt-[27px] text-center text-secondBlack'>
                 {subTitle}
             </div>
-            <div className='lg:hidden subtitle mt-[27px] text-center text-secondBlack'>
+            <div className='lg:hidden max-w-[265px] subtitle mt-[27px] text-center text-secondBlack'>
                 {mobileSubTitle}
             </div>
-            <SocialMediaLinks svgClassName='fill-primary' className='lg:!hidden w-full !mr-0 mt-[75px] lg:!justify-start' />
+            <SocialMediaLinks svgClassName='fill-primary' className='lg:!hidden w-full !mr-0 mt-[70px] lg:mt-[75px] lg:!justify-start' />
             <div className='mt-24 lg:mt-[60px] flex flex-col-reverse lg:flex-row gap-[60px]'>
                 <ContactForm onSubmit={onFormSubmit} />
                 <div className='flex flex-col gap-[70px] items-center'>
