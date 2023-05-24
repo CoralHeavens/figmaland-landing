@@ -1,5 +1,6 @@
 {
   "name": "figmaland",
+  "homepage": "https://coralheavens.github.io/figmaland-landing/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
