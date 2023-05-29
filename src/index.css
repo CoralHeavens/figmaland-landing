@@ -13,6 +13,10 @@
     @apply text-base font-graphic
 }
 
+html {
+    max-width: 100vw;
+}
+
 html:has(.popup-no-scroll) {
     overflow: hidden;
 }
@@ -47,7 +51,7 @@ button:disabled {
 }
 
 form > input {
-    @apply lg:w-[353px] h-[54px] bg-formBg border-[1px] border-lightGray rounded-[39px] px-5 text-[15px]
+    @apply lg:w-full h-[54px] bg-formBg border-[1px] border-lightGray rounded-[39px] px-5 text-[15px]
     text-darkBlack placeholder-darkBlack
 }
 

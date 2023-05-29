@@ -10,7 +10,7 @@ const linkLabel = 'Try For Free';
 
 export default function Organize() {
     return (
-        <section className="w-full mt-48 lg:my-[226px] flex-centered flex-col lg:flex-row">
+        <section className="w-full mt-48 px-5 lg:my-[226px] flex-centered flex-col lg:flex-row px-5">
             <div className='mx-5 lg:mx-0 flex lg:block flex-col items-center'>
                 <div className="text-black max-w-[335px] title text-center lg:text-left">
                     {title}
@@ -23,7 +23,7 @@ export default function Organize() {
                         {mobileSubTitle}
                     </span>
                 </div>
-                <Button label={linkLabel} className='!font-bold mt-0' />
+                <Button label={linkLabel} className='!font-bold mt-0 block' />
             </div>
             <img className='w-[95vw] mt-16 lg:hidden' src={mobileLaptop} alt='' />
             <Icon className='hidden lg:block' icon='laptop' />

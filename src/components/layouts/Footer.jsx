@@ -23,7 +23,7 @@ const number = '(239) 555-0108';
 
 export default function Footer() {
     return (
-        <section className='w-screen flex flex-col items-center lg:items-start lg:flex-row justify-center bg-black py-32 lg:pt-40 lg:pb-[150px] gap-20 lg:gap-32'>
+        <section className='w-screen px-5 flex flex-col items-center lg:items-start lg:flex-row justify-center bg-black py-32 lg:pt-40 lg:pb-[150px] gap-20 lg:gap-32'>
             {columns.map(({title, array}, index) => (
                 <div key={`${title}${index}`} className='flex flex-col items-center lg:items-start text-white'>
                     <div className='subtitle font-bold mb-[25px]'>

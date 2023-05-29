@@ -26,9 +26,9 @@ export default function Subscribe() {
     }
 
     return (
-        <section className='py-[52px] w-full flex flex-col mt-40 lg:flex-row justify-center items-center gap-[113px]'>
-            <Icon icon='letter' className='hidden lg:block' />
-            <div className='flex flex-col items-center lg:block'>
+        <section className='py-[52px] px-5 w-full flex flex-col mt-40 lg:flex-row justify-center items-center gap-[113px]'>
+            <Icon icon='letter' className='hidden lg:block w-full' />
+            <div className='flex flex-col items-center lg:block w-full'>
                 <div className='text-xl font-bold text-center lg:text-left'>
                     {title}
                 </div>

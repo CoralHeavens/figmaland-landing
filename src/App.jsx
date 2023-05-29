@@ -15,8 +15,8 @@ function App() {
     return (
     <main>
         <img className='lg:hidden absolute -z-10 !w-screen h-full' src={mobileBackground} alt=''/>
-        <Icon icon='background' className="hidden lg:block absolute -z-10 !w-screen" />
-        <header className="lg:h-[52vw] mb-12 w-screen">
+        <Icon icon='background' className="hidden bg-white lg:block absolute -z-10 !w-screen" />
+        <header className="mb-12 w-screen">
             <Header />
             <TopSection />
         </header>

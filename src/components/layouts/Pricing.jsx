@@ -35,7 +35,7 @@ export default function Pricing() {
                                 updateActiveTab(index)
                             }}
                             className={joinClassNames(
-                                'p-10 w-[335px] flex flex-col items-center rounded-[10px]',
+                                'p-10 max-w-[335px] lg:w-[24vw] flex flex-col items-center rounded-[10px]',
                                 isActive ? 'bg-primary text-white lg:py-20' : 'bg-white text-black lg:my-10'
                             )}
                         >
@@ -68,7 +68,7 @@ export default function Pricing() {
                                 ))}
                             </div>
                             <Button className={joinClassNames(
-                                'w-full h-14 !mt-10 lg:!mt-22.5',
+                                'w-full h-14 !mt-10 lg:!mt-22.5 flex-centered lg:whitespace-nowrap',
                                 isActive && '!bg-white !text-primary'
                             )} label={buttonLabel} />
                         </button>
