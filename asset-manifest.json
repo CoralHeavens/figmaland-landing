@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/figmaland-landing/static/css/main.96de8898.css",
-    "main.js": "/figmaland-landing/static/js/main.36858bfb.js",
+    "main.css": "/figmaland-landing/static/css/main.4df78aa9.css",
+    "main.js": "/figmaland-landing/static/js/main.27434644.js",
     "static/media/background.svg": "/figmaland-landing/static/media/background.c4fc761bcc8b92ef7b5ff8bccb08f908.svg",
     "static/media/player.png": "/figmaland-landing/static/media/player.fac37f4dca6944b6e853.png",
     "static/media/mobileBackground.png": "/figmaland-landing/static/media/mobileBackground.24b8aad985f49708fdbf.png",
@@ -12,7 +12,7 @@
     "static/media/mobileLaptop.png": "/figmaland-landing/static/media/mobileLaptop.143471acce86fdc82ef1.png",
     "static/media/mobileLetter.png": "/figmaland-landing/static/media/mobileLetter.866c9b39972bf24eef5d.png",
     "static/media/amazon.svg": "/figmaland-landing/static/media/amazon.247d2414fb58cb1f11f1d87bfc692cdc.svg",
-    "static/media/newLetter.svg": "/figmaland-landing/static/media/newLetter.1d44f964e2cb9bff0a61fdad58ff30a1.svg",
+    "static/media/newLetter.svg": "/figmaland-landing/static/media/newLetter.35f352d40545a719a7335ff99ddb99f9.svg",
     "static/media/logo.svg": "/figmaland-landing/static/media/logo.8071eee68089a9719a70d321e05e3601.svg",
     "static/media/uber.svg": "/figmaland-landing/static/media/uber.dd97d90f7de4a2ef4c6f779ec14284bf.svg",
     "static/media/dropbox.svg": "/figmaland-landing/static/media/dropbox.cd7700cdf0a191c400f85cdec8b0eab3.svg",
@@ -32,11 +32,11 @@
     "static/media/mobilePlay.svg": "/figmaland-landing/static/media/mobilePlay.7ffab34c69efbd4aa504f1e226c30205.svg",
     "static/media/play.svg": "/figmaland-landing/static/media/play.be56e905d8378f1678f1398e7a92245e.svg",
     "static/media/headerButton.svg": "/figmaland-landing/static/media/headerButton.928a4433a4a82d5ac98c25af79da7f87.svg",
-    "main.96de8898.css.map": "/figmaland-landing/static/css/main.96de8898.css.map",
-    "main.36858bfb.js.map": "/figmaland-landing/static/js/main.36858bfb.js.map"
+    "main.4df78aa9.css.map": "/figmaland-landing/static/css/main.4df78aa9.css.map",
+    "main.27434644.js.map": "/figmaland-landing/static/js/main.27434644.js.map"
   },
   "entrypoints": [
-    "static/css/main.96de8898.css",
-    "static/js/main.36858bfb.js"
+    "static/css/main.4df78aa9.css",
+    "static/js/main.27434644.js"
   ]
 }
