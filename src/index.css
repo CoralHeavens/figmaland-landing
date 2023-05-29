@@ -1,16 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: Graphic;
-    src: './fonts/Graphik';
-}
-
 * {
-    @apply text-base font-graphic
+    @apply text-base;
+    font-family: 'Graphik', sans-serif;
 }
 
 html {
