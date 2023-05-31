@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Icon from "../Icon";
 import {validate} from "../../helpers/validate";
 import mobileLetter from '../../images/mobileLetter.png';
+import joinClassNames from "../../helpers/joinClassNames";
 
 const title = 'At your fingertips';
 const content = 'Lightning fast prototyping';
@@ -16,6 +17,7 @@ const subscribeContent = 'Available exclusively on Figmaland';
 
 const emailPlaceholder = 'Your Email';
 const emailButton = 'Subscribe';
+const notValidEmail = 'Email is not valid';
 
 export default function Subscribe() {
     const [email, updateEmail] = useState('');
@@ -26,9 +28,9 @@ export default function Subscribe() {
     }
 
     return (
-        <section className='py-[52px] px-5 w-full flex flex-col mt-40 lg:flex-row justify-center items-center gap-[113px]'>
-            <Icon icon='letter' className='hidden lg:block w-full' />
-            <div className='flex flex-col items-center lg:block w-full'>
+        <section className='px-5 pl-16 w-full flex flex-col pt-[218px] lg:flex-row justify-center items-center gap-[113px] mb-16'>
+            <Icon icon='letter' className='hidden lg:block min-w-[667px]' />
+            <div className='flex flex-col items-center lg:block -mt-5'>
                 <div className='text-xl font-bold text-center lg:text-left'>
                     {title}
                 </div>
@@ -54,10 +56,12 @@ export default function Subscribe() {
                         {subscribeContent}
                     </div>
                 </div>
-                <div className='w-full lg:w-fit mt-9 flex flex-col lg:flex-row px-8 lg:pl-2.5 lg:pr-0 gap-3'>
+                <div className='relative w-full lg:w-fit mt-9 flex flex-col lg:flex-row px-8 lg:pl-2.5 lg:pr-0 gap-3 -mr-8'>
                     <input
-                        className='h-[54px] rounded-[39px] px-[39px] py-[19px]
-                            bg-lightGray text-sm leading-4 placeholder-darkBlack'
+                        className={joinClassNames(
+                            'h-[54px] rounded-[39px] px-[39px] w-[273px] py-[19px] bg-lightGray text-sm leading-4',
+                            !isValidEmail && email && 'border-red-500 border-[1px]'
+                        )}
                         onChange={(e) => {
                             updateEmail(e.target.value);
                             updateIsValidEmail(validate(e.target.value, 'email'));
@@ -65,6 +69,11 @@ export default function Subscribe() {
                         value={email}
                         placeholder={emailPlaceholder}
                     />
+                    {!isValidEmail && email && (
+                        <div className='absolute -bottom-8 pl-4 text-[18px] text-red-500'>
+                            {notValidEmail}
+                        </div>
+                    )}
                     <button
                         className='py-[19px] px-[38px] common-button flex justify-center items-center'
                         onClick={sendEmail}

@@ -17,11 +17,11 @@ export default function ContactUs() {
     }
 
     return (
-        <section className='w-screen pt-[213px] pb-[149px] lg:pb-[102px] flex flex-col items-center'>
-            <div className='title'>
+        <section className='w-screen pt-[213px] pb-[149px] lg:pb-[102px] flex flex-col items-center px-5'>
+            <div className='title pb-4'>
                 {title}
             </div>
-            <div className='hidden lg:block subtitle max-w-[532px] mt-[27px] text-center text-secondBlack'>
+            <div className='hidden lg:block subtitle max-w-[532px] mt-[13px] text-center text-secondBlack'>
                 {subTitle}
             </div>
             <div className='lg:hidden max-w-[265px] subtitle mt-[27px] text-center text-secondBlack'>

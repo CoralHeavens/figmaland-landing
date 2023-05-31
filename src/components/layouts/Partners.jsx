@@ -16,30 +16,30 @@ const MAX_MOBILE_PARTNERS = 3;
 
 export default function Partners() {
     return (
-        <section className='w-full py-20 flex items-center flex-col'>
-            <div className='mt-[50px] flex flex-col items-center font-normal'>
-                <div className='title'>
+        <section className='w-full px-5 pb-24 pt-[76px] ml-1 flex items-center flex-col'>
+            <div className='pt-[50px] flex flex-col items-center font-normal'>
+                <div className='title pb-[11px]'>
                     {title}
                 </div>
                 <div className='hidden lg:block subtitle text-center text-secondBlack
-                    mt-[27px] max-w-[532px] max-h-none'
+                    pt-4 pb-4 max-w-[532px] max-h-none'
                 >
                     {description}
                 </div>
                 <div className='lg:hidden subtitle text-center text-secondBlack
-                    mt-[27px] max-w-[90vw] max-h-20 truncate'
+                    pt-[11px] max-w-[90vw] max-h-20 truncate'
                 >
                     {mobileDescription.top}
                     <br/>
                     {mobileDescription.bottom}
                 </div>
-                <div className='mt-20 flex max-w-[1100px] flex-wrap justify-center gap-8 lg:gap-0'>
+                <div className='pt-[70px] flex max-w-[1100px] flex-wrap justify-center gap-8 lg:gap-0'>
                     {clients.map(({ name, icon, link }, index) => (
                         <a
                             key={`${name}${index}`}
                             href={link}
                             className={joinClassNames(
-                                'py-10 lg:p-10 border-border border-[0.5px] w-[65vw] lg:w-fit',
+                                'h-[164px] flex flex-col pt-7 lg:px-10 border-border border-[0.5px] w-[65vw] lg:w-fit',
                                 index >= MAX_MOBILE_PARTNERS && 'hidden lg:block'
                             )}
                         >
@@ -51,7 +51,7 @@ export default function Partners() {
                     ))}
                 </div>
             </div>
-            <Button label={buttonLabel} className='font-bold px-[58px] max-w-none min-h-[60px] flex items-center' />
+            <Button label={buttonLabel} className='font-bold px-[58px] max-w-none h-[60px] !mt-[82px] flex items-center' />
         </section>
     )
 }

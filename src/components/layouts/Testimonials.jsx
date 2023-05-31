@@ -12,7 +12,7 @@ const buttonLabel = 'More Testimonials';
 
 export default function Testimonials() {
     return (
-        <section className='pt-[111px] flex items-center flex-col'>
+        <section className='pt-[98px] px-5 flex items-center flex-col -mr-3'>
             <div className='title'>
                 {title}
             </div>
@@ -22,7 +22,7 @@ export default function Testimonials() {
             >
                 {description}
             </div>
-            <div className='flex gap-[13px] mt-[62px]'>
+            <div className='flex gap-[13px] mt-[62px] mb-10'>
                 <Icon icon='avatar' className=''/>
                 <div>
                     <span className={joinClassNames(
@@ -40,7 +40,7 @@ export default function Testimonials() {
                     </a>
                 </div>
             </div>
-            <Button label={buttonLabel} className='max-w-none mb-[100px] mt-20 font-bold tracking-[0.1px] h-[60px] flex items-center' />
+            <Button label={buttonLabel} className='max-w-none mb-[100px] !px-12 !mt-10 font-bold tracking-[0.1px] h-[60px] flex items-center' />
         </section>
     )
 }

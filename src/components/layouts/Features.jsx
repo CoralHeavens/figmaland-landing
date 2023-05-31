@@ -15,13 +15,13 @@ const Player = ({
     className
 }) => (
     <div className={joinClassNames(
-        "mt-16 lg:mt-33 relative flex flex-col items-center justify-center",
+        "pt-16 lg:pt-8 relative flex flex-col items-center justify-center",
         className,
     )}>
-        <img className='hidden lg:block' src={player} alt='' />
+        <img className='hidden lg:block max-w-[74vw]' src={player} alt='' />
         <img className='lg:hidden' src={mobilePlayer} alt='' />
-        <a href="https://www.youtube.com/" className="absolute flex-centered rounded-full w-16 lg:w-playButton h-16 lg:h-playButton bg-primary">
-            <Icon className='hidden lg:block' icon='play'/>
+        <a href="https://www.youtube.com/" className="absolute -mt-4 flex-centered rounded-full w-16 lg:w-playButton h-16 lg:h-playButton bg-primary">
+            <Icon className='hidden lg:block -mr-2.5' icon='play'/>
             <Icon className='lg:hidden' icon='mobilePlay'/>
         </a>
     </div>
@@ -29,11 +29,11 @@ const Player = ({
 
 export default function Features() {
     return (
-        <section className="w-full flex flex-col items-center mt-[90vw] md:mt-[70vw] lg:mt-[10vw] xl:mt-[20vw] lg:my-0">
-            <div className="title mt-[11px] overflow-hidden">
+        <section className="w-full flex flex-col items-center lg:my-0 px-5 pl-8 pb-40">
+            <div className="title mt-1 overflow-hidden">
                 {title}
             </div>
-            <div className="text-center max-w-[265px] lg:max-w-none mt-[27px]">
+            <div className="text-center max-w-[265px] lg:max-w-none pt-[27px] mb-12">
                 <span className='text-secondBlack text-[28px] leading-10'>
                     {subTitle.top}
                 </span>
@@ -43,7 +43,7 @@ export default function Features() {
                 </span>
             </div>
             <Player className='lg:hidden' />
-            <div className="flex flex-col lg:grid grid-cols-3 gap-20 lg:gap-[52px] py-[18px] px-3 lg:p-0 mt-14 lg:mt-22.5">
+            <div className="flex flex-col lg:grid grid-cols-3 gap-20 lg:gap-[76px] py-[18px] px-3 lg:p-0 mt-[72px] lg:mt-10.5 lg:mb-10">
                 {features.map(({ icon, title, subTitle }) => (
                     <div key={icon} className="flex flex-col items-center">
                         <Icon icon={icon} className='mb-5'/>

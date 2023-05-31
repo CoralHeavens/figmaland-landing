@@ -15,7 +15,7 @@ export default function Pricing() {
     const [activeTab, updateActiveTab] = useState(1);
 
     return (
-        <section className='w-screen flex flex-col items-center bg-black pt-[110px]'>
+        <section className='w-screen flex flex-col items-center bg-black pt-[110px] px-5'>
             <div className='text-white title'>
                 {title}
             </div>
@@ -43,7 +43,7 @@ export default function Pricing() {
                                 {name}
                             </div>
                             <div className={joinClassNames(
-                                'leading-[23px] max-w-[148px] mt-[3px]',
+                                'leading-[23px] max-w-[148px] -mt-0.5',
                                 isActive ? 'text-white' : 'text-secondBlack',
                             )}>
                                 {description}
@@ -52,12 +52,12 @@ export default function Pricing() {
                                 <div className='text-[74px] font-bold leading-[84px]'>
                                     {price}
                                 </div>
-                                <div className='flex flex-col justify-center'>
+                                <div className='flex flex-col pt-1'>
                                     <div className='subtitle font-bold text-left'>{currency}</div>
-                                    <div>{pricePlan}</div>
+                                    <div className='-mt-2'>{pricePlan}</div>
                                 </div>
                             </div>
-                            <div className='mt-2 lg:mt-[18px]'>
+                            <div className='mt-2'>
                                 {Array.from({length: 5}).map((_, index) => (
                                     <div
                                         className='mt-5 text-[15px] leading-7 tracking-[0.2px]'
@@ -68,7 +68,7 @@ export default function Pricing() {
                                 ))}
                             </div>
                             <Button className={joinClassNames(
-                                'w-full h-14 !mt-10 lg:!mt-22.5 flex-centered lg:whitespace-nowrap',
+                                'w-full h-14 !mt-10 flex-centered lg:whitespace-nowrap',
                                 isActive && '!bg-white !text-primary'
                             )} label={buttonLabel} />
                         </button>

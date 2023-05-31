@@ -1,6 +1,5 @@
 import React from "react";
 import { ReactComponent as Logo } from '../images/logo.svg';
-import { ReactComponent as Background } from '../images/background.svg';
 
 import { ReactComponent as TwitterLogo } from '../images/socialMedia/twitterLogo.svg';
 import { ReactComponent as FacebookLogo } from '../images/socialMedia/facebookLogo.svg';
@@ -43,8 +42,6 @@ export const globalIcons = {
     openFeature: <FeatureOpen />,
     dataFeature: <FeatureData />,
     fastFeature: <FeatureFast />,
-
-    background: <Background className="w-screen h-full" />,
 
     play: <Play />,
 
