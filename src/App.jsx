@@ -15,8 +15,8 @@ import joinClassNames from "./helpers/joinClassNames";
 function App() {
     return (
     <main>
-        <div className='absolute -z-10 w-screen h-full overflow-hidden'>
-            <img className='lg:hidden w-screen h-full object-cover' src={mobileBackground} alt=''/>
+        <div className='absolute -z-10 w-screen h-full overflow-x-hidden'>
+            <img className='lg:hidden w-screen h-full object-cover border-none' src={mobileBackground} alt=''/>
             <img className='hidden bg-white lg:block -z-10 w-screen h-full max-h-[930px] object-cover' src={background} alt=''/>
             <div className={joinClassNames(
                 'bg-white -mt-[44px] -ml-32 w-full h-64 rotate-[24deg]',

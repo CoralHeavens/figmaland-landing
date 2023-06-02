@@ -31,10 +31,10 @@ export default function ContactUs() {
             <div className='mt-24 w-full lg:mt-[60px] flex items-center flex-col-reverse lg:flex-row lg:justify-center px-5 gap-[60px]'>
                 <ContactForm onSubmit={onFormSubmit} />
                 <div className='w-full max-w-[725px] flex flex-col gap-[70px] items-center'>
-                    <div className='w-full flex flex-col lg:flex-row items-center lg:gap-[35px] px-9'>
-                        <div className='-ml-4 lg:ml-0 contact-map-info lg:flex-col lg:max-w-[293px] items-center lg:items-start w-full'>
-                            <Icon icon='gps' className='fill-primary lg:w-full flex justify-center' />
-                            <span className='text-left'>
+                    <div className='w-full flex flex-col lg:flex-row items-center lg:gap-[30px] -mt-4'>
+                        <div className='-ml-4 lg:ml-0 contact-map-info lg:flex-col lg:max-w-none lg:min-w-[293px] items-center lg:items-start w-full'>
+                            <Icon icon='smallGps' className='fill-primary lg:w-full flex justify-center' />
+                            <span className='text-center'>
                                 {address}
                             </span>
                         </div>

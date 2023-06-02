@@ -44,9 +44,9 @@ button:disabled {
     @apply text-[28px] leading-10 tracking-[0.2px]
 }
 
-form > input {
+form * input {
     @apply lg:w-full h-[54px] bg-formBg border-[1px] border-lightGray rounded-[39px] px-5 text-[15px]
-    text-darkBlack placeholder-darkBlack
+    text-darkBlack
 }
 
 .contact-map-info {

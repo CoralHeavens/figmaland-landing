@@ -23,7 +23,7 @@ export default function Organize() {
                         {mobileSubTitle}
                     </span>
                 </div>
-                <Button label={linkLabel} className='!font-bold !mt-[52px] h-[60px] flex justify-center items-center !p-0 max-w-[236px]' />
+                <Button label={linkLabel} className='!font-bold !mt-[52px] h-[60px] flex justify-center items-center lg:!p-0 max-w-[236px]' />
             </div>
             <img className='w-[95vw] mt-16 lg:hidden' src={mobileLaptop} alt='' />
             <Icon className='hidden lg:block' icon='laptop' />

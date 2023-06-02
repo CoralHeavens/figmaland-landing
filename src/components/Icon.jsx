@@ -25,6 +25,7 @@ import { ReactComponent as Ibm } from '../images/logos/ibm.svg';
 import { ReactComponent as Avatar } from '../images/avatar.svg';
 
 import { ReactComponent as GPS } from '../images/gps.svg';
+import { ReactComponent as SmallGPS } from "../images/smallGPS.svg";
 import { ReactComponent as Mobile } from '../images/mobile.svg';
 import { ReactComponent as Mail } from "../images/mail.svg";
 
@@ -59,6 +60,7 @@ export const globalIcons = {
     avatar: <Avatar />,
 
     gps: <GPS />,
+    smallGps: <SmallGPS />,
     mobile: <Mobile />,
     mail: <Mail />,
 

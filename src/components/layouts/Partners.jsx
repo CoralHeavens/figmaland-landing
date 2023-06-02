@@ -16,7 +16,7 @@ const MAX_MOBILE_PARTNERS = 3;
 
 export default function Partners() {
     return (
-        <section className='w-full px-5 pb-24 pt-[76px] ml-1 flex items-center flex-col'>
+        <section className='w-full px-5 pb-24 pt-[76px] lg:ml-1 flex items-center flex-col'>
             <div className='pt-[50px] flex flex-col items-center font-normal'>
                 <div className='title pb-[11px]'>
                     {title}

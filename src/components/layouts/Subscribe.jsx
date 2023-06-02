@@ -28,9 +28,9 @@ export default function Subscribe() {
     }
 
     return (
-        <section className='px-5 pl-16 w-full flex flex-col pt-[218px] lg:flex-row justify-center items-center gap-[113px] mb-16'>
-            <Icon icon='letter' className='hidden lg:block min-w-[667px]' />
-            <div className='flex flex-col items-center lg:block -mt-5'>
+        <section className='px-10 lg:pl-16 w-full flex flex-col pt-[218px] lg:flex-row justify-between max-w-[1440px] lg:mx-auto items-center mb-16'>
+            <Icon icon='letter' className='hidden lg:block w-1/2' />
+            <div className='flex flex-col items-center lg:block -mt-5 lg:w-1/2 lg:max-w-[544px]'>
                 <div className='text-xl font-bold text-center lg:text-left'>
                     {title}
                 </div>
@@ -56,10 +56,10 @@ export default function Subscribe() {
                         {subscribeContent}
                     </div>
                 </div>
-                <div className='relative w-full lg:w-fit mt-9 flex flex-col lg:flex-row px-8 lg:pl-2.5 lg:pr-0 gap-3 -mr-8'>
+                <div className='relative w-full lg:w-fit mt-9 flex flex-col lg:flex-row px-8 lg:pl-2.5 lg:pr-0 gap-3 lg:-mr-8'>
                     <input
                         className={joinClassNames(
-                            'h-[54px] rounded-[39px] px-[39px] w-[273px] py-[19px] bg-lightGray text-sm leading-4',
+                            'h-[54px] rounded-[39px] px-[39px] lg:w-[273px] py-[19px] bg-lightGray text-sm leading-4',
                             !isValidEmail && email && 'border-red-500 border-[1px]'
                         )}
                         onChange={(e) => {
