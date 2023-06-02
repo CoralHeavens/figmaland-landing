@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/figmaland-landing/static/css/main.4df78aa9.css",
-    "main.js": "/figmaland-landing/static/js/main.27434644.js",
-    "static/media/background.svg": "/figmaland-landing/static/media/background.c4fc761bcc8b92ef7b5ff8bccb08f908.svg",
+    "main.css": "/figmaland-landing/static/css/main.2032e051.css",
+    "main.js": "/figmaland-landing/static/js/main.fdaf4dc2.js",
+    "static/media/background.png": "/figmaland-landing/static/media/background.b13b773e4e953eaf1a08.png",
     "static/media/player.png": "/figmaland-landing/static/media/player.fac37f4dca6944b6e853.png",
     "static/media/mobileBackground.png": "/figmaland-landing/static/media/mobileBackground.24b8aad985f49708fdbf.png",
     "static/media/mobilePlayer.png": "/figmaland-landing/static/media/mobilePlayer.298b90fe52a9d5a9f599.png",
@@ -19,6 +19,7 @@
     "static/media/microsoft.svg": "/figmaland-landing/static/media/microsoft.0a12dd8edcb2883ad26ee557ce6acba9.svg",
     "static/media/google.svg": "/figmaland-landing/static/media/google.000a4efb5aa3caaa4b3fab434e41a949.svg",
     "static/media/ibm.svg": "/figmaland-landing/static/media/ibm.d770a0d3b5b04842d9f34780a1c0bcac.svg",
+    "static/media/smallGPS.svg": "/figmaland-landing/static/media/smallGPS.876ac6a09370685bc9ed357aca98df14.svg",
     "static/media/twitterLogo.svg": "/figmaland-landing/static/media/twitterLogo.563b5eb5de89c519a25400562e006375.svg",
     "static/media/linkedInLogo.svg": "/figmaland-landing/static/media/linkedInLogo.c8ff19c1755f2bfcb7fbf575d772e89f.svg",
     "static/media/realData.svg": "/figmaland-landing/static/media/realData.7c4c257ce89bd71b70a444aa73c97b2c.svg",
@@ -32,11 +33,11 @@
     "static/media/mobilePlay.svg": "/figmaland-landing/static/media/mobilePlay.7ffab34c69efbd4aa504f1e226c30205.svg",
     "static/media/play.svg": "/figmaland-landing/static/media/play.be56e905d8378f1678f1398e7a92245e.svg",
     "static/media/headerButton.svg": "/figmaland-landing/static/media/headerButton.928a4433a4a82d5ac98c25af79da7f87.svg",
-    "main.4df78aa9.css.map": "/figmaland-landing/static/css/main.4df78aa9.css.map",
-    "main.27434644.js.map": "/figmaland-landing/static/js/main.27434644.js.map"
+    "main.2032e051.css.map": "/figmaland-landing/static/css/main.2032e051.css.map",
+    "main.fdaf4dc2.js.map": "/figmaland-landing/static/js/main.fdaf4dc2.js.map"
   },
   "entrypoints": [
-    "static/css/main.4df78aa9.css",
-    "static/js/main.27434644.js"
+    "static/css/main.2032e051.css",
+    "static/js/main.fdaf4dc2.js"
   ]
 }
